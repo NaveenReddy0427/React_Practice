@@ -1,0 +1,12 @@
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    margin: 4px;
+}
+
+.counter-div{
+    margin: 4px;
+}
