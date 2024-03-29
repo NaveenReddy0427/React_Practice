@@ -32,6 +32,7 @@ function Counter() {
             <button className="btn btn-danger" onClick={()=>{
                 dispatch({type: "RESET"})
             }}>RESET</button>
+            
         </div>
     </>
   )
