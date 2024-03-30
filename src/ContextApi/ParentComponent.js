@@ -1,7 +1,8 @@
 import { useState } from "react"
 import ChildComp from "./childComponent"
+import { colorContext } from "../context"
 
-const ParentComp = (props) =>{
+const ParentComp = () =>{
 
     const [color, setColor] = useState("#000000")
     return(
@@ -12,8 +13,9 @@ const ParentComp = (props) =>{
                 onChange={(e)=>{
                     setColor(e.target.value)
                 }}/>
-
-        <ChildComp color={color}/>
+        <colorContext.Provider value={color}>
+            <ChildComp/>      
+        </colorContext.Provider>
         </>
     )
 }

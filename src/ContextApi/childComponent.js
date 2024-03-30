@@ -1,6 +1,6 @@
 import GrandChildComp from "./grandChildComponents"
 
-const ChildComp = (props) =>{
+const ChildComp = () =>{
 
     return(
         <div
@@ -13,7 +13,7 @@ const ChildComp = (props) =>{
 
         }}
         >
-        <GrandChildComp color={props.color}/>
+        <GrandChildComp />
         </div>
     )
 }

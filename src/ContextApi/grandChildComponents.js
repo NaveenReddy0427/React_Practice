@@ -1,13 +1,15 @@
+import { useContext } from "react";
+import { colorContext } from "../context";
 
+function GrandChildComp(){
 
-const GrandChildComp = (props) => {
-
+    const color = useContext(colorContext)
     return(
         <>
         <p style={{
-            color: props.color
+            color: color
         }}>
-        Color: {props.color}
+        Color: {color}
         </p>
         </>
     )
