@@ -1,3 +1,4 @@
+import ParentComp from "./ContextApi/ParentComponent";
 import Home from "./customHooks/HomePage";
 import Counter from "./useReducer";
 
@@ -6,6 +7,7 @@ function App() {
    <>
     <Counter/>
     <Home/>
+    <ParentComp/>
    </>
   );
 }
