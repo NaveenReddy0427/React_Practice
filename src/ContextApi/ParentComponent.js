@@ -13,7 +13,7 @@ const ParentComp = () =>{
                 onChange={(e)=>{
                     setColor(e.target.value)
                 }}/>
-        <colorContext.Provider value={color}>
+        <colorContext.Provider value={{color, setColor}}>
             <ChildComp/>      
         </colorContext.Provider>
         </>

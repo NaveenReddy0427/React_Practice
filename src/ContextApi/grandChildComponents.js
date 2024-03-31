@@ -1,18 +1,18 @@
-import { useContext } from "react";
+// import { useContext } from "react";
 import { colorContext } from "../context";
 
 function GrandChildComp(){
 
-    const color = useContext(colorContext)
+    // const value = useContext(colorContext)
     return(
-        <>
-        <p style={{
-            color: color
-        }}>
-        Color: {color}
-        </p>
-        </>
+        <colorContext.Consumer>
+        {(value)=> <p style={{color: value.color}}>Color: {value.color}</p>}
+        </colorContext.Consumer>
+
     )
 }
 
 export default GrandChildComp;
+
+
+
